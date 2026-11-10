@@ -6,6 +6,6 @@ import java.util.Optional;
 import java.util.UUID;
 
 public interface OrderPersistencePort {
-	Order save(Order order);
-	Optional<Order> findById(UUID orderId);
+    Order save(Order order);
+    Optional<Order> findById(UUID orderId);
 }

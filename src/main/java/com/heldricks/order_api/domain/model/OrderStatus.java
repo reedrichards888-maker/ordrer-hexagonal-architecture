@@ -2,6 +2,8 @@ package com.heldricks.order_api.domain.model;
 
 public enum OrderStatus {
 	PENDING,
-	CONFIRMED,
+    PROCESSING,
+	COMPLETED,
+    FAILED,
 	CANCELLED
 }

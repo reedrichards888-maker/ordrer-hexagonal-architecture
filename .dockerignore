@@ -1,0 +1,7 @@
+.git
+.gradle
+.vscode
+bin
+build
+.env
+**/.DS_Store

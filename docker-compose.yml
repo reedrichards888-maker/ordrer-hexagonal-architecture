@@ -22,5 +22,22 @@ services:
       timeout: 5s
       retries: 5
 
+  order-api:
+    image: order-api:1.0.0
+    container_name: order-api
+    restart: unless-stopped
+
+    environment:
+      DB_URL: jdbc:postgresql://postgres:5432/order_db
+      DB_USERNAME: order_user
+      DB_PASSWORD: order_password
+
+    ports:
+      - "8080:8080"
+
+    depends_on:
+      postgres:
+        condition: service_healthy
+
 volumes:
   postgres_data:

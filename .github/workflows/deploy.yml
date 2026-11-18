@@ -44,7 +44,8 @@ jobs:
 
 
       - name: Show ARN
-        run: echo "Role: ${{ vars.AWS_ROLE_ARN }}"
+        run: |
+          echo "Role: ${{ vars.AWS_ROLE_ARN }}"
         
       - name: Show OIDC subject
         run: |

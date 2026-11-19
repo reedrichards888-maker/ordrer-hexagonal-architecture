@@ -13,7 +13,7 @@ env:
   AWS_REGION: us-east-1
   ECR_REPOSITORY: heldricks/order
   ECS_CLUSTER: order-cluster
-  ECS_SERVICE: order-task-definition-service-mj3wr8zc
+  ECS_SERVICE: order-task-definition-service-7qtgmk9s
   ECS_TASK_FAMILY: order-task-definition
   CONTAINER_NAME: order-main
 
